@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="row">
+                <div class="col-3"></div>
+                <div class="col-4">
+                    <h3 class="float-middle">Most Recent Donors</h3>
+                </div>
+                <div class="col-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 m-1 donation" v-for="donation in donations">
+                    <p>
+                        <span v-if="donation.displayName">{{ donation.displayName }}</span><span v-else>Anonymous</span>
+                        <span class="float-right">${{ donation.amount }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>

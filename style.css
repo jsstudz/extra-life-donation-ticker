@@ -1,0 +1,25 @@
+.donation {
+    background-color: rgb(38, 194, 235, .5);
+    color: white;
+    font-weight: 600;
+}
+h3 {
+    color: rgb(38, 194, 235)
+}
+.list {
+    background-color: #0e0e10;
+    color: #d3d3d8;
+    padding: 0 1em;
+}
+p {
+    margin: 0;
+}
+.single-donation {
+    border-top: 1px solid #919191;
+}
+.incentive {
+    font-style: italic;
+}
+.donor {
+    font-weight: 600;
+}
